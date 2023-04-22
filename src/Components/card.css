@@ -1,6 +1,5 @@
 .cards {
     background-color: #f8fff8;
-    /*border: 2px solid #e0e0e0;*/
     border-radius: 8px;
     padding: 30px;
     display: flex;
@@ -26,4 +25,33 @@
 .cards > .name {
     font-weight: 600;
     font-size: 1.1rem;
+}
+
+.quantity-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.quantity-input > input {
+    width: 10ch;
+    line-height: 1.5rem;
+}
+
+.quantity-input > button {
+    background-color: #0b600b;
+    color: white;
+    border: 0;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    /*padding: 5px;*/
+    height: 30px;
+    width: 30px;
+    font-weight: 800;
+}
+
+input[type=number] {
+    appearance: textfield;
+    -moz-appearance: textfield;
 }

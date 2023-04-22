@@ -19,15 +19,19 @@ export default function Shop() {
 
     const [cart, setCart] = React.useState([])
 
+    function handleClick(name) {
+        setCart(prevState => [...prevState, name])
+    }
+
     return (
         <div>
            <div className="sticky">
-               <p>Current items in Cart: {cart.length}</p>
+               <p>Current items in your cart: {cart.length}</p>
                <button className="checkout">Checkout</button>
            </div>
             <div className="card-container">
                {animalsArray.map((animal, i) => {
-                   return <Card name={animalsInfoArray[i].name} price={animalsInfoArray[i].price} key={i} img={animal} />
+                   return <Card handleClick={handleClick} name={animalsInfoArray[i].name} price={animalsInfoArray[i].price} key={i} img={animal} />
                })}
            </div>
         </div>
