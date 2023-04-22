@@ -10,13 +10,24 @@ import snake from "../images/snake.png"
 
 export default function Shop() {
     const animalsArray = [fox, elephant, koala, mosquito, rhino, snake]
-    const animalsNameArray = ["fox", "elephant", "koala", "mosquito", "rhino", "snake"]
+    const animalsInfoArray = [{name :"fox", price: 123},
+        {name: "elephant", price: 231},
+        {name: "koala", price: 427},
+        {name: "mosquito", price: 8723},
+        {name: "rhino", price: 353},
+        {name: "snake", price: 672}]
+
+    const [cart, setCart] = React.useState([])
 
     return (
-        <div style={{backgroundColor: "black", height: "calc(100vh - 100px)", padding: "30px"}}>
-           <div className="card-container">
+        <div>
+           <div className="sticky">
+               <p>Current items in Cart: {cart.length}</p>
+               <button className="checkout">Checkout</button>
+           </div>
+            <div className="card-container">
                {animalsArray.map((animal, i) => {
-                   return <Card name={animalsNameArray[i]} key={i} img={animal} />
+                   return <Card name={animalsInfoArray[i].name} price={animalsInfoArray[i].price} key={i} img={animal} />
                })}
            </div>
         </div>

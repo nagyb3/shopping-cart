@@ -3,4 +3,38 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 40px;
+    padding: 50px;
+    background-color: #d4e1d4;
+}
+
+@media only screen and (max-width: 1000px) {
+    .card-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}
+
+.sticky {
+    background-color: orange;
+    /*padding: 40px;*/
+    height: 4rem;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sticky > p {
+    margin: 0;
+}
+
+.sticky > button.checkout {
+    background-color: darkgreen;
+    color: white;
+    border: 0;
+    padding: 11px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 800;
 }
