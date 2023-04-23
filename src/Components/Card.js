@@ -23,9 +23,9 @@ export default function Card(props) {
             <p className="name" style={{textTransform: "capitalize"}}>{props.name}</p>
             <p className="price">{props.price} $</p>
             <div className="quantity-input">
-                    <button onClick={decrement} className="decrement">-</button>
-                    <input min="0" max="20" value={itemOrderQuantity} type="number" name="number" id="number"/>
-                    <button onClick={increment} className="increment">+</button>
+                    <button data-testid="button-decrement" onClick={decrement} className="decrement">-</button>
+                    <input min="0" max="20" value={itemOrderQuantity} type="number" data-testid="state" name="number" id="number"/>
+                    <button data-testid="button-increment" onClick={increment} className="increment">+</button>
             </div>
             <button onClick={handleClick}>ADD TO CART</button>
         </div>
