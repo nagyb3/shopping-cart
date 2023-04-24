@@ -1,0 +1,27 @@
+.home-container {
+    padding: 100px;
+    background-color: #d4e1d4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: calc(100vh - 100px);
+    box-sizing: border-box;
+    gap: 20px;
+}
+
+h1.hero {
+    font-size: 3rem;
+}
+
+.home-container > * {
+    width: fit-content;
+    color: #212121;
+}
+
+h2 {
+    text-align: center;
+}
+
+a, a#icon-created-by {
+    color: darkgreen;
+}
