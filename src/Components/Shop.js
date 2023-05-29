@@ -9,6 +9,7 @@ import rhino from "../images/rhino.png"
 import snake from "../images/snake.png"
 
 export default function Shop(props) {
+    // !! ARRAY OF THE PICTURES: 
     const animalsArray = [fox, elephant, koala, mosquito, rhino, snake]
     const animalsInfoArray = [{name :"fox", price: 123},
         {name: "elephant", price: 231},
