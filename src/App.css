@@ -42,4 +42,5 @@ nav a {
     padding: 5%;
     -webkit-filter: grayscale(1) invert(1);
     filter: grayscale(1) invert(1);
+    appearance: image;
 }

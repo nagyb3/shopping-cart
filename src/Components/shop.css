@@ -37,7 +37,8 @@
     margin: 0;
 }
 
-.sticky > button.checkout {
+.sticky .checkout-button {
+    text-decoration: none;
     background-color: darkgreen;
     color: white;
     border: 0;

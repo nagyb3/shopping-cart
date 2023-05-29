@@ -2,11 +2,6 @@ import React from "react"
 import cart from "../images/cart.png"
 
 export default function Navbar() {
-
-    function handleClick() {
-
-    }
-
     return (
         <nav>
             <h1><a href="/">Fictional Webstore</a></h1>
@@ -14,7 +9,7 @@ export default function Navbar() {
                 <li><a href="/">Home</a></li>
                 <li><a href="/shop">Shop</a></li>
             </ul>
-            <img onClick={handleClick} src={cart} alt="" height="25px" id="shopping-cart-image"/>
+            <a id="shopping-cart-image" href="/shop/checkout"><img src={cart} alt="" height="25px"/></a>
         </nav>
     )
 }
